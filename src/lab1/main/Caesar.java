@@ -1,6 +1,6 @@
-package main;
+package lab1.main;
 
-public class Caesar extends AbstractCypher {
+public class Caesar extends AbstractCipher {
     private final int substitutionKey;
 
     public Caesar(int substitutionKey) {
@@ -15,7 +15,7 @@ public class Caesar extends AbstractCypher {
 
     @Override
     public String decrypt(String msg) {
-        return encrypt(msg, prepareKey(- this.substitutionKey));
+        return encrypt(msg, prepareKey(-this.substitutionKey));
     }
 
     private String encrypt(String msg, int substitutionKey) {

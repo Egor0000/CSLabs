@@ -1,6 +1,6 @@
-package main;
+package lab1.main;
 
-public class CaesarP extends AbstractCypher{
+public class CaesarP extends AbstractCipher {
     private final String key;
 
     private final int substitutionKey;

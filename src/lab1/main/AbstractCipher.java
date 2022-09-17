@@ -1,6 +1,6 @@
-package main;
+package lab1.main;
 
-public abstract class AbstractCypher {
+public abstract class AbstractCipher {
     public String alphabet = "abcdefghijklmnopqrstuvwxyz";
 
     public abstract String encrypt(String msg);

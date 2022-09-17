@@ -1,8 +1,8 @@
-package main;
+package lab1.main;
 
 import java.util.LinkedHashSet;
 
-public class Playfair extends AbstractCypher {
+public class Playfair extends AbstractCipher {
     private final String key;
     private String table;
 

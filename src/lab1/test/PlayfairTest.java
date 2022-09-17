@@ -1,6 +1,6 @@
-package test;
+package lab1.test;
 
-import main.Playfair;
+import lab1.main.Playfair;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

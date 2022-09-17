@@ -1,6 +1,6 @@
-package main;
+package lab1.main;
 
-public class Vigenere extends AbstractCypher {
+public class Vigenere extends AbstractCipher {
     private final String key;
     private final int shift;
 
@@ -43,8 +43,8 @@ public class Vigenere extends AbstractCypher {
             char toEncrypt = Character.toLowerCase(chars[i]);
             if (Character.isLetter(toEncrypt)) {
                 int encIdx = prepareKey(alphabet.indexOf((toEncrypt))
-                        + offset * alphabet.indexOf((keyChars[k % keyChars.length])
-                        + prepareKey(shift) - 1) % alphabet.length()) % alphabet.length();
+                        + offset * alphabet.indexOf((keyChars[k % keyChars.length]) + prepareKey(shift) - 1)
+                        % alphabet.length()) % alphabet.length();
                 char encChr = alphabet.charAt(encIdx);
                 builder.append(Character.isUpperCase(chars[i])?Character.toUpperCase(encChr):encChr);
                 k++;

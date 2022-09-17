@@ -1,6 +1,6 @@
-package test;
+package lab1.test;
 
-import main.CaesarP;
+import lab1.main.CaesarP;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
