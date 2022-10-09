@@ -64,7 +64,7 @@ To verify implementation there were written several unit tests.
 
 Mostly, there is tested ` encrypt(String msg) `. `decrypt(String msg)` performs the same operation but with opposite key
 
-![tests_caesar.png](tests_caesar.png)
+![tests_caesar.png](../assets/ciphers/classical/tests_caesar.png)
 
 ### Caesar cipher with permutation
 By looking at the naming of this cipher, there might be concluded that it is based on Caesar cipher. Indeed, this cipher
@@ -97,7 +97,7 @@ placed to obtain the opposite mapping.
 Due to the fact that Caesar with permutation performs some simple operations of calling `new Caesar()` and direct mapping
  there are not much to test and verify, so there are checked the main methods to perform without any issues
 
-![test_caesar_permutation.png](test_caesar_permutation.png)
+![test_caesar_permutation.png](../assets/ciphers/classical/test_caesar_permutation.png)
 ### Vigenere cipher
 Vigenere cipher is another classical symmetric cipher. It is based on Caesar cipher using a polyalphabetic 
 subtitution for encryption.
@@ -135,7 +135,7 @@ Decryption
 #### Tests
 Here are unit tests for Vigenere Cipher
 
-![vigenere_tests.png](vigenere_tests.png)
+![vigenere_tests.png](../assets/ciphers/classical/vigenere_tests.png)
 
 ### Playfair cipher
 
@@ -183,7 +183,7 @@ The decryption is performed by calling the methods for opposite direction mappin
 Unit tests for Playfair cipher. It consists of several groups of tests: preparing input message, table generation, 
 encryption and decryption
 
-![palyfair_tests.png](palyfair_tests.png)
+![palyfair_tests.png](../assets/ciphers/classical/palyfair_tests.png)
 
 ## Conclusions / Screenshots / Results
 In this laboratory work there were studied and implemented some of the most known classical ciphers

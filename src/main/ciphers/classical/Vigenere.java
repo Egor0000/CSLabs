@@ -1,4 +1,4 @@
-package lab1.main;
+package main.ciphers.classical;
 
 public class Vigenere extends AbstractCipher {
     private final String key;

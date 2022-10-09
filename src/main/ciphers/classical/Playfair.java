@@ -1,4 +1,4 @@
-package lab1.main;
+package main.ciphers.classical;
 
 import java.util.LinkedHashSet;
 

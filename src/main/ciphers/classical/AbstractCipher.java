@@ -1,4 +1,4 @@
-package lab1.main;
+package main.ciphers.classical;
 
 public abstract class AbstractCipher {
     public String alphabet = "abcdefghijklmnopqrstuvwxyz";

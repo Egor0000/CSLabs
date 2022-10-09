@@ -1,4 +1,4 @@
-package lab1.main;
+package main.ciphers.classical;
 
 public class Caesar extends AbstractCipher {
     private final int substitutionKey;

@@ -1,6 +1,6 @@
-package lab1.test;
+package tests.ciphers.classical;
 
-import lab1.main.Playfair;
+import main.ciphers.classical.Playfair;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
