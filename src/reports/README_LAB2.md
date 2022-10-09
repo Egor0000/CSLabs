@@ -288,6 +288,7 @@ The decryption involves the same steps and transformations with some minor chang
 5. *mixColumns()* uses another pattern for polynomial computations (with the same operations of doubling and addition, just other constants)
 <br>
 #### Tests
+
 ![img.png](../assets/ciphers/symmetric/aes_tests.png)
 
 ## Conclusions / Screenshots / Results
