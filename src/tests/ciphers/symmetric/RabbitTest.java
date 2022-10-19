@@ -1,15 +1,11 @@
 package tests.ciphers.symmetric;
 
-import main.ciphers.symmetric.RabbitCipher;
+import main.ciphers.symmetric.stream.RabbitCipher;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigInteger;
-import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class RabbitTest {
     @Test

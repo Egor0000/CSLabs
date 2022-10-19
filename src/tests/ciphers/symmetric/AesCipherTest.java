@@ -1,6 +1,6 @@
 package tests.ciphers.symmetric;
 
-import main.ciphers.symmetric.AesCipher;
+import main.ciphers.symmetric.block.AesCipher;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

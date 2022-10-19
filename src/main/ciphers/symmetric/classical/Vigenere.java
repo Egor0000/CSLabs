@@ -1,4 +1,6 @@
-package main.ciphers.classical;
+package main.ciphers.symmetric.classical;
+
+import main.ciphers.AbstractCipher;
 
 public class Vigenere extends AbstractCipher {
     private final String key;

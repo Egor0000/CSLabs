@@ -1,6 +1,6 @@
 package tests.ciphers.classical;
 
-import main.ciphers.classical.Caesar;
+import main.ciphers.symmetric.classical.Caesar;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

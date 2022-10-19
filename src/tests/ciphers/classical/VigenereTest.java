@@ -1,6 +1,6 @@
 package tests.ciphers.classical;
 
-import main.ciphers.classical.Vigenere;
+import main.ciphers.symmetric.classical.Vigenere;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

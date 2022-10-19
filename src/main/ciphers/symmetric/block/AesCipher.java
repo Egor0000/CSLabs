@@ -1,5 +1,6 @@
-package main.ciphers.symmetric;
+package main.ciphers.symmetric.block;
 
+import main.ciphers.AbstractCipher;
 import utils.ciphers.symmetric.AesCipherUtils;
 
 import java.util.ArrayList;

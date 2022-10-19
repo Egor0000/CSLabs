@@ -1,11 +1,6 @@
-package main.ciphers.symmetric;
+package main.ciphers.symmetric.stream;
 
-import main.ciphers.symmetric.AbstractCipher;
-
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import main.ciphers.AbstractCipher;
 
 public class RabbitCipher extends AbstractCipher {
     private long[] key;
