@@ -17,6 +17,33 @@ public class RsaCipher extends AbstractCipher {
         keyGen();
     }
 
+    public String encryptPrivate(String s) {
+        char[] chars = s.toCharArray();
+
+        StringBuilder sb = new StringBuilder();
+
+        for (char aChar : chars) {
+            BigInteger msg = BigInteger.valueOf((int) aChar);
+            BigInteger c = msg.modPow(d, n);
+            sb.append(c).append(" ");
+        }
+
+
+        return sb.toString().trim();
+    }
+
+    public String decryptPublic(String s) {
+        String[] eChars = s.split(" ");
+        StringBuilder sb = new StringBuilder();
+
+        for (String eChar : eChars) {
+            BigInteger msg = new BigInteger(eChar).modPow(e, n);
+
+            sb.append((char) msg.intValue());
+        }
+        return sb.toString().trim();
+    }
+
     @Override
     public String encrypt(String s) {
         char[] chars = s.toCharArray();
