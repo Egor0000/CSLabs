@@ -16,8 +16,10 @@ The project is a web server composed of 3 classes: ```Authenticator```, ```Ciphe
 user, creates secret keys for each new user, hashes and saves passwords in db. It generates secret key and qrcode and accesses 
 Google Authenticator for MF Authentication.
 <br>
+
 * ```CipherAccessService``` is a web server. It listens for request, encrypts/decrypts and authenticates/authorizes users.
 <br>
+
 * ```UserServiceImpl``` performs basic CRUD operations on users.
 ### Web server
 ```CipherAccessService``` servers as a web service. It inits and starts ```HttpServer``` to listen for incoming requests.
