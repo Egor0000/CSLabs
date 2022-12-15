@@ -11,6 +11,7 @@
 ## Implementation
 The project is a web server composed of 3 classes: ```Authenticator```, ```CipherAccessService``` and ```UserServiceImpl```.
 <br>
+
 * ```Authenticator``` is responsible for all actions related to authentication and authorization. It registers and verifies 
 user, creates secret keys for each new user, hashes and saves passwords in db. It generates secret key and qrcode and accesses 
 Google Authenticator for MF Authentication.
