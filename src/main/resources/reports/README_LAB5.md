@@ -26,14 +26,22 @@ Google Authenticator for MF Authentication.
 <br>
 At the moment there are 4 available endpoints: ```/encrypt```, ```/decrypt```, ```/register```, ```/login```.
 <br>
+
 ```/encrypt``` and ```/decrypt``` are self-explanatory. 
+<br>
+
 ![Screenshot from 2022-12-15 23-59-21.png](..%2Fassets%2Fciphers%2Fauthenticator%2FScreenshot%20from%202022-12-15%2023-59-21.png)
+<br>
+
 ```/register``` is a POST request that takes ```UserDto``` object 
 as an entity for user. This object includes fields as name, surname, email, password, code and role. This endpoint accesses
 ```
 public void register(UserDto userDto) {...}
 ```
+<br>
+
 ![Screenshot from 2022-12-15 22-39-01.png](..%2Fassets%2Fciphers%2Fauthenticator%2FScreenshot%20from%202022-12-15%2022-39-01.png)
+<br>
 
 ```/login``` is meant to verify a user during authentication and authorization. It accesses 
 ``` 
@@ -71,6 +79,8 @@ the entered code with Google Authenticator one.
             && code.equals(getTOTPCode(TokenRepository.getInstance().get(userDto.getEmail())));
 ```
 If code expires or password is incorrect, authentication fails.
+<br>
+
 ![Screenshot from 2022-12-15 23-56-14.png](..%2Fassets%2Fciphers%2Fauthenticator%2FScreenshot%20from%202022-12-15%2023-56-14.png)
 #### Authorization
 ```public boolean authorize(InputDto input)``` authorize user based on input ```cipherID```. CipherID is the identifier
@@ -79,9 +89,13 @@ not. All role-cipher mappings can be checked in ```Role``` enum.
 ```         
 return role.containsCipher(cipher);
 ```
+<br>
+
 ![Screenshot from 2022-12-15 22-49-19.png](..%2Fassets%2Fciphers%2Fauthenticator%2FScreenshot%20from%202022-12-15%2022-49-19.png)
 
 If role and cipher are not compatible, the authorization fails
+<br>
+
 ![Screenshot from 2022-12-15 22-48-29.png](..%2Fassets%2Fciphers%2Fauthenticator%2FScreenshot%20from%202022-12-15%2022-48-29.png)
 #### Secret key generation
 In order to perform MFA, there was chosen Google Authenticator service. It is a third-party service using time-based one-time
@@ -92,8 +106,6 @@ These parameters are passed to Authenticator app. In order to verify input code 
 there is used external library TOTP.
 <br>
 In order to enhance user experience, there was added QR code generation based on required by Authenticator App parameters.
-<br>
-![code.png](..%2Fqrcodes%2Fcode.png)
 <br>
 This qr code is generated on user registration and is updated on each ```/register``` request.
 

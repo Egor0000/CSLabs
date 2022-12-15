@@ -79,7 +79,7 @@ public class AuthenticatorImpl {
             throws WriterException, IOException {
         BitMatrix matrix = new MultiFormatWriter().encode(barCodeData, BarcodeFormat.QR_CODE,
                 100, 100);
-        try (FileOutputStream out = new FileOutputStream("src/main/resources/qrcodes/code.png")) {
+        try (FileOutputStream out = new FileOutputStream("src/main/resources/qrcodes/code1.png")) {
             MatrixToImageWriter.writeToStream(matrix, "png", out);
         }
     }
